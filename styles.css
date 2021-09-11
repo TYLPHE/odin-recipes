@@ -1,0 +1,54 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(236, 246, 255);
+    margin: 0px;
+}
+
+body{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: min-content;
+    grid-template-areas:
+    "title  title"
+    "image  items"
+    "image  list"
+    "image  instructions"
+    "image  paragraph"
+    "return return";
+}
+
+h1{
+    grid-area: title;
+    font-size: 30px;
+    text-align: center;
+}
+h2{
+    margin: auto auto auto 15px;
+}
+p{
+    grid-area: paragraph;
+    justify-self: start;
+
+    margin: auto auto 15px 30px;
+}
+ul{
+    grid-area: list;
+    margin: 0 0 15px 30px;
+}
+img{
+    grid-area: image;
+    border: 5px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 400px;
+    margin: 15px 15px 15px 15px;
+}
+.items{
+    grid-area: items;
+}
+.inst{
+    grid-area: instructions;
+}
+.return{
+    grid-area: return;
+}
